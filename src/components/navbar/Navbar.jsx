@@ -17,11 +17,13 @@ const Navbar = () => {
         <h1 className="font-bold text-2xl">BlogApp</h1>
       </div>
       <div className="flex flex-1 gap-5">
-        <ThemeToggle/>
-        <Link href="/">Home</Link>
-        <Link href="/contact">Contact</Link>
-        <Link href="/about">About</Link>
-        <AuthLinks />
+        <ThemeToggle />
+        <div className="hidden md:flex gap-5">
+          <Link href="/">Home</Link>
+          <Link href="/contact">Contact</Link>
+          <Link href="/about">About</Link>
+          <AuthLinks />
+        </div>
       </div>
     </div>
   );
